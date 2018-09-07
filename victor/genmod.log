@@ -1,0 +1,29 @@
++ moddep=moddep.lst
++ infile=disk.module
++ outfile=disk.mod
++ tmpfile=disk.mod.tmp
++ echo disk.module
++ sed -e s@\.module.*$@@
++ modname=disk
++ grep ^disk: moddep.lst
++ grep ^disk: moddep.lst
++ sed s@^.*:@@
++ deps=
++ rm -f disk.mod.tmp disk.mod
++ test x0 != x1
++ objcopy -R .modname -R .moddeps disk.module disk.mod.tmp
++ mktemp /tmp/tmp.XXXXXXXXXX
++ t1=/tmp/tmp.oqeEa295Gl
++ printf disk\0
++ mktemp /tmp/tmp.XXXXXXXXXX
++ t2=/tmp/tmp.uq7yrJQ4aw
++ test -n 
++ objcopy --add-section .modname=/tmp/tmp.oqeEa295Gl disk.mod.tmp
++ rm -f /tmp/tmp.oqeEa295Gl /tmp/tmp.uq7yrJQ4aw
++ test xpc != xemu
++ strip --strip-unneeded -K grub_mod_init -K grub_mod_fini -K _grub_mod_init -K _grub_mod_fini -R .note.gnu.gold-version -R .note.GNU-stack -R .gnu.build.attributes -R .rel.gnu.build.attributes -R .rela.gnu.build.attributes -R .eh_frame -R .rela.eh_frame -R .rel.eh_frame -R .note -R .comment -R .ARM.exidx disk.mod.tmp
++ test -z 
++ test xpc != xemu
++ ./build-grub-module-verifier disk.mod.tmp i386 pc
++ mv disk.mod.tmp disk.mod
++ set +x
