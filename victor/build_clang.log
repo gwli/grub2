@@ -1436,7 +1436,98 @@ clang -DHAVE_CONFIG_H -I.  -Wall -W -DGRUB_UTIL=1 -D_FILE_OFFSET_BITS=64 -I./inc
 mv -f util/.deps-util/libgrubkern_a-getroot.Tpo util/.deps-util/libgrubkern_a-getroot.Po
 clang -DHAVE_CONFIG_H -I.  -Wall -W -DGRUB_UTIL=1 -D_FILE_OFFSET_BITS=64 -I./include -DGRUB_FILE=\"grub-core/osdep/unix/getroot.c\" -I. -I. -I. -I. -I./include -I./include -I./grub-core/lib/libgcrypt-grub/src/  -I./grub-core/gnulib -I./grub-core/gnulib -D_FILE_OFFSET_BITS=64 -Wall -W -Wshadow -Wpointer-arith -Wundef -Wchar-subscripts -Wcomment -Wdeprecated-declarations -Wdisabled-optimization -Wdiv-by-zero -Wfloat-equal -Wformat-extra-args -Wformat-security -Wformat-y2k -Wimplicit -Wimplicit-function-declaration -Wimplicit-int -Wmain -Wmissing-braces -Wmissing-format-attribute -Wmultichar -Wparentheses -Wreturn-type -Wsequence-point -Wshadow -Wsign-compare -Wswitch -Wtrigraphs -Wunknown-pragmas -Wunused -Wunused-function -Wunused-label -Wunused-parameter -Wunused-value  -Wunused-variable -Wwrite-strings -Wnested-externs -Wstrict-prototypes -Wcast-align  -Wextra -Wattributes -Wendif-labels -Winit-self -Wint-to-pointer-cast -Winvalid-pch -Wmissing-field-initializers -Wnonnull -Woverflow -Wvla -Wpointer-to-int-cast -Wstrict-aliasing -Wvariadic-macros -Wvolatile-register-var -Wpointer-sign -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-declarations -Wformat=2 -Werror  -Wno-undef -Wno-sign-compare -Wno-unused -Wno-unused-parameter -Wno-redundant-decls -Wno-unreachable-code -Wno-conversion  -MT grub-core/osdep/unix/libgrubkern_a-getroot.o -MD -MP -MF grub-core/osdep/unix/.deps-util/libgrubkern_a-getroot.Tpo -c -o grub-core/osdep/unix/libgrubkern_a-getroot.o `test -f 'grub-core/osdep/unix/getroot.c' || echo './'`grub-core/osdep/unix/getroot.c
 mv -f grub-core/osdep/unix/.deps-util/libgrubkern_a-getroot.Tpo grub-core/osdep/unix/.deps-util/libgrubkern_a-getroot.Po
-clang -DHAVE_CONFIG_H -I.  -Wall -W -DGRUB_UTIL=1 -D_FILE_OFFSET_BITS=64 -I./include -DGRUB_FILE=\"grub-core/osdep/getroot.c\" -I. -I. -I. -I. -I./include -I./include -I./grub-core/lib/libgcrypt-grub/src/  -I./grub-core/gnulib -I./grub-core/gnulib -D_FILE_OFFSET_BITS=64 -Wall -W -Wshadow -Wpointer-arith -Wundef -Wchar-subscripts -Wcomment -Wdeprecated-declarations -Wdisabled-optimization -Wdiv-by-zero -Wfloat-equal -Wformat-extra-args -Wformat-security -Wformat-y2k -Wimplicit -Wimplicit-function-declaration -Wimplicit-int -Wmain -Wmissing-braces -Wmissing-format-attribute -Wmultichar -Wparentheses -Wreturn-type -Wsequence-point -Wshadow -Wsign-compare -Wswitch -Wtrigraphs -Wunknown-pragmas -Wunused -Wunused-function -Wunused-label -Wunused-parameter -Wunused-value  -Wunused-variable -Wwrite-strings -Wnested-externs -Wstrict-prototypes -Wcast-align  -Wextra -Wattributes -Wendif-labels -Winit-self -Wint-to-pointer-cast -Winvalid-pch -Wmissing-field-initializers -Wnonnull -Woverflow -Wvla -Wpointer-to-int-cast -Wstrict-aliasing -Wvariadic-macros -Wvolatile-register-var -Wpointer-sign -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-declarations -Wformat=2 -Werror  -Wno-undef -Wno-sign-compare -Wno-unused -Wno-unused-parameter -Wno-redundant-decls -Wno-unreachable-code -Wno-conversion  -MT grub-core/osdep/libgrubkern_a-getroot.o -MD -MP -MF grub-core/osdep/.deps-util/libgrubkern_a-getroot.Tpo -c -o grub-core/osdep/libgrubkern_a-getroot.o `test -f 'grub-core/osdep/getroot.c' || echo './'`grub-core/osdep/getroot.c
+clang
+ -DHAVE_CONFIG_H
+ -I. 
+ -Wall
+ -W
+ -DGRUB_UTIL=1
+ -D_FILE_OFFSET_BITS=64
+ -I./include
+ -DGRUB_FILE=\"grub-core/osdep/getroot.c\"
+ -I.
+ -I.
+ -I.
+ -I.
+ -I./include
+ -I./include
+ -I./grub-core/lib/libgcrypt-grub/src/ 
+ -I./grub-core/gnulib
+ -I./grub-core/gnulib
+ -D_FILE_OFFSET_BITS=64
+ -Wall
+ -W
+ -Wshadow
+ -Wpointer-arith
+ -Wundef
+ -Wchar-subscripts
+ -Wcomment
+ -Wdeprecated-declarations
+ -Wdisabled-optimization
+ -Wdiv-by-zero
+ -Wfloat-equal
+ -Wformat-extra-args
+ -Wformat-security
+ -Wformat-y2k
+ -Wimplicit
+ -Wimplicit-function-declaration
+ -Wimplicit-int
+ -Wmain
+ -Wmissing-braces
+ -Wmissing-format-attribute
+ -Wmultichar
+ -Wparentheses
+ -Wreturn-type
+ -Wsequence-point
+ -Wshadow
+ -Wsign-compare
+ -Wswitch
+ -Wtrigraphs
+ -Wunknown-pragmas
+ -Wunused
+ -Wunused-function
+ -Wunused-label
+ -Wunused-parameter
+ -Wunused-value 
+ -Wunused-variable
+ -Wwrite-strings
+ -Wnested-externs
+ -Wstrict-prototypes
+ -Wcast-align 
+ -Wextra
+ -Wattributes
+ -Wendif-labels
+ -Winit-self
+ -Wint-to-pointer-cast
+ -Winvalid-pch
+ -Wmissing-field-initializers
+ -Wnonnull
+ -Woverflow
+ -Wvla
+ -Wpointer-to-int-cast
+ -Wstrict-aliasing
+ -Wvariadic-macros
+ -Wvolatile-register-var
+ -Wpointer-sign
+ -Wmissing-include-dirs
+ -Wmissing-prototypes
+ -Wmissing-declarations
+ -Wformat=2
+ -Werror 
+ -Wno-undef
+ -Wno-sign-compare
+ -Wno-unused
+ -Wno-unused-parameter
+ -Wno-redundant-decls
+ -Wno-unreachable-code
+ -Wno-conversion 
+ -MT grub-core/osdep/libgrubkern_a-getroot.o
+ -MD
+ -MP
+ -MF grub-core/osdep/.deps-util/libgrubkern_a-getroot.Tpo
+ -c
+ -o grub-core/osdep/libgrubkern_a-getroot.o `test
+ -f 'grub-core/osdep/getroot.c' || echo './'`grub-core/osdep/getroot.c
 mv -f grub-core/osdep/.deps-util/libgrubkern_a-getroot.Tpo grub-core/osdep/.deps-util/libgrubkern_a-getroot.Po
 clang -DHAVE_CONFIG_H -I.  -Wall -W -DGRUB_UTIL=1 -D_FILE_OFFSET_BITS=64 -I./include -DGRUB_FILE=\"grub-core/osdep/devmapper/getroot.c\" -I. -I. -I. -I. -I./include -I./include -I./grub-core/lib/libgcrypt-grub/src/  -I./grub-core/gnulib -I./grub-core/gnulib -D_FILE_OFFSET_BITS=64 -Wall -W -Wshadow -Wpointer-arith -Wundef -Wchar-subscripts -Wcomment -Wdeprecated-declarations -Wdisabled-optimization -Wdiv-by-zero -Wfloat-equal -Wformat-extra-args -Wformat-security -Wformat-y2k -Wimplicit -Wimplicit-function-declaration -Wimplicit-int -Wmain -Wmissing-braces -Wmissing-format-attribute -Wmultichar -Wparentheses -Wreturn-type -Wsequence-point -Wshadow -Wsign-compare -Wswitch -Wtrigraphs -Wunknown-pragmas -Wunused -Wunused-function -Wunused-label -Wunused-parameter -Wunused-value  -Wunused-variable -Wwrite-strings -Wnested-externs -Wstrict-prototypes -Wcast-align  -Wextra -Wattributes -Wendif-labels -Winit-self -Wint-to-pointer-cast -Winvalid-pch -Wmissing-field-initializers -Wnonnull -Woverflow -Wvla -Wpointer-to-int-cast -Wstrict-aliasing -Wvariadic-macros -Wvolatile-register-var -Wpointer-sign -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-declarations -Wformat=2 -Werror  -Wno-undef -Wno-sign-compare -Wno-unused -Wno-unused-parameter -Wno-redundant-decls -Wno-unreachable-code -Wno-conversion  -MT grub-core/osdep/devmapper/libgrubkern_a-getroot.o -MD -MP -MF grub-core/osdep/devmapper/.deps-util/libgrubkern_a-getroot.Tpo -c -o grub-core/osdep/devmapper/libgrubkern_a-getroot.o `test -f 'grub-core/osdep/devmapper/getroot.c' || echo './'`grub-core/osdep/devmapper/getroot.c
 mv -f grub-core/osdep/devmapper/.deps-util/libgrubkern_a-getroot.Tpo grub-core/osdep/devmapper/.deps-util/libgrubkern_a-getroot.Po
@@ -4101,9 +4192,148 @@ clang -Os -Wall -W -Wshadow -Wpointer-arith -Wundef -Wchar-subscripts -Wcomment 
 clang -DHAVE_CONFIG_H -I. -I..  -Wall -W  -DGRUB_MACHINE_PCBIOS=1 -DGRUB_MACHINE=I386_PC -m32 -msoft-float -Xclang -msoft-float -Xclang -no-implicit-float -nostdinc -isystem /usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include -I../include -I../include -DGRUB_FILE=\"boot/i386/pc/boot.S\" -I. -I. -I.. -I.. -I../include -I../include -I../grub-core/lib/libgcrypt-grub/src/    -D_FILE_OFFSET_BITS=64 -g -no-integrated-as -m32 -msoft-float -Xclang -msoft-float -Xclang -no-implicit-float -DGRUB_FILE=\"boot/i386/pc/boot.S\" -I. -I. -I.. -I.. -I../include -I../include -I../grub-core/lib/libgcrypt-grub/src/ -DASM_FILE=1     -MT boot/i386/pc/boot_image-boot.o -MD -MP -MF boot/i386/pc/.deps-core/boot_image-boot.Tpo -c -o boot/i386/pc/boot_image-boot.o `test -f 'boot/i386/pc/boot.S' || echo './'`boot/i386/pc/boot.S
 mv -f boot/i386/pc/.deps-core/boot_image-boot.Tpo boot/i386/pc/.deps-core/boot_image-boot.Po
 clang -Os -Wall -W -Wshadow -Wpointer-arith -Wundef -Wchar-subscripts -Wcomment -Wdeprecated-declarations -Wdisabled-optimization -Wdiv-by-zero -Wfloat-equal -Wformat-extra-args -Wformat-security -Wformat-y2k -Wimplicit -Wimplicit-function-declaration -Wimplicit-int -Wmain -Wmissing-braces -Wmissing-format-attribute -Wmultichar -Wparentheses -Wreturn-type -Wsequence-point -Wshadow -Wsign-compare -Wswitch -Wtrigraphs -Wunknown-pragmas -Wunused -Wunused-function -Wunused-label -Wunused-parameter -Wunused-value  -Wunused-variable -Wwrite-strings -Wnested-externs -Wstrict-prototypes -g -Wredundant-decls -Wmissing-prototypes -Wmissing-declarations  -Wextra -Wattributes -Wendif-labels -Winit-self -Wint-to-pointer-cast -Winvalid-pch -Wmissing-field-initializers -Wnonnull -Woverflow -Wvla -Wpointer-to-int-cast -Wstrict-aliasing -Wvariadic-macros -Wvolatile-register-var -Wpointer-sign -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-declarations -Wformat=2 -march=i386 -m32 -malign-jumps=1 -malign-loops=1 -malign-functions=1 -freg-struct-return -mno-mmx -mno-sse -mno-sse2 -mno-sse3 -mno-3dnow -fno-dwarf2-cfi-asm -fno-asynchronous-unwind-tables -fno-unwind-tables -fno-stack-protector -Werror   -fno-builtin   -m32 -Wl,-melf_i386 -Wl,--build-id=none  -nostdlib -Wl,-N -Wl,-S -Wl,-N -Wl,-Ttext,0x7C00   -o boot.image boot/i386/pc/boot_image-boot.o   
-clang -DHAVE_CONFIG_H -I. -I..  -Wall -W  -DGRUB_MACHINE_PCBIOS=1 -DGRUB_MACHINE=I386_PC -m32 -msoft-float -Xclang -msoft-float -Xclang -no-implicit-float -nostdinc -isystem /usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include -I../include -I../include -DGRUB_FILE=\"boot/i386/pc/boot.S\" -I. -I. -I.. -I.. -I../include -I../include -I../grub-core/lib/libgcrypt-grub/src/   -DHYBRID_BOOT=1  -D_FILE_OFFSET_BITS=64 -g -no-integrated-as -m32 -msoft-float -Xclang -msoft-float -Xclang -no-implicit-float -DGRUB_FILE=\"boot/i386/pc/boot.S\" -I. -I. -I.. -I.. -I../include -I../include -I../grub-core/lib/libgcrypt-grub/src/ -DASM_FILE=1     -MT boot/i386/pc/boot_hybrid_image-boot.o -MD -MP -MF boot/i386/pc/.deps-core/boot_hybrid_image-boot.Tpo -c -o boot/i386/pc/boot_hybrid_image-boot.o `test -f 'boot/i386/pc/boot.S' || echo './'`boot/i386/pc/boot.S
+clang
+ -DHAVE_CONFIG_H
+ -I.
+ -I.. 
+ -Wall
+ -W 
+ -DGRUB_MACHINE_PCBIOS=1
+ -DGRUB_MACHINE=I386_PC
+ -m32
+ -msoft-float
+ -Xclang
+ -msoft-float
+ -Xclang
+ -no-implicit-float
+ -nostdinc
+ -isystem /usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include
+ -I../include
+ -I../include
+ -DGRUB_FILE=\"boot/i386/pc/boot.S\"
+ -I.
+ -I.
+ -I..
+ -I..
+ -I../include
+ -I../include
+ -I../grub-core/lib/libgcrypt-grub/src/  
+ -DHYBRID_BOOT=1 
+ -D_FILE_OFFSET_BITS=64
+ -g
+ -no-integrated-as
+ -m32
+ -msoft-float
+ -Xclang
+ -msoft-float
+ -Xclang
+ -no-implicit-float
+ -DGRUB_FILE=\"boot/i386/pc/boot.S\"
+ -I.
+ -I.
+ -I..
+ -I..
+ -I../include
+ -I../include
+ -I../grub-core/lib/libgcrypt-grub/src/
+ -DASM_FILE=1    
+ -MT boot/i386/pc/boot_hybrid_image-boot.o
+ -MD
+ -MP
+ -MF boot/i386/pc/.deps-core/boot_hybrid_image-boot.Tpo
+ -c
+ -o boot/i386/pc/boot_hybrid_image-boot.o `test
+ -f 'boot/i386/pc/boot.S' || echo './'`boot/i386/pc/boot.S
 mv -f boot/i386/pc/.deps-core/boot_hybrid_image-boot.Tpo boot/i386/pc/.deps-core/boot_hybrid_image-boot.Po
-clang -Os -Wall -W -Wshadow -Wpointer-arith -Wundef -Wchar-subscripts -Wcomment -Wdeprecated-declarations -Wdisabled-optimization -Wdiv-by-zero -Wfloat-equal -Wformat-extra-args -Wformat-security -Wformat-y2k -Wimplicit -Wimplicit-function-declaration -Wimplicit-int -Wmain -Wmissing-braces -Wmissing-format-attribute -Wmultichar -Wparentheses -Wreturn-type -Wsequence-point -Wshadow -Wsign-compare -Wswitch -Wtrigraphs -Wunknown-pragmas -Wunused -Wunused-function -Wunused-label -Wunused-parameter -Wunused-value  -Wunused-variable -Wwrite-strings -Wnested-externs -Wstrict-prototypes -g -Wredundant-decls -Wmissing-prototypes -Wmissing-declarations  -Wextra -Wattributes -Wendif-labels -Winit-self -Wint-to-pointer-cast -Winvalid-pch -Wmissing-field-initializers -Wnonnull -Woverflow -Wvla -Wpointer-to-int-cast -Wstrict-aliasing -Wvariadic-macros -Wvolatile-register-var -Wpointer-sign -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-declarations -Wformat=2 -march=i386 -m32 -malign-jumps=1 -malign-loops=1 -malign-functions=1 -freg-struct-return -mno-mmx -mno-sse -mno-sse2 -mno-sse3 -mno-3dnow -fno-dwarf2-cfi-asm -fno-asynchronous-unwind-tables -fno-unwind-tables -fno-stack-protector -Werror   -fno-builtin   -m32 -Wl,-melf_i386 -Wl,--build-id=none  -nostdlib -Wl,-N -Wl,-S -Wl,-N -Wl,-Ttext,0x7C00   -o boot_hybrid.image boot/i386/pc/boot_hybrid_image-boot.o   
+clang
+ -Os
+ -Wall
+ -W
+ -Wshadow
+ -Wpointer-arith
+ -Wundef
+ -Wchar-subscripts
+ -Wcomment
+ -Wdeprecated-declarations
+ -Wdisabled-optimization
+ -Wdiv-by-zero
+ -Wfloat-equal
+ -Wformat-extra-args
+ -Wformat-security
+ -Wformat-y2k
+ -Wimplicit
+ -Wimplicit-function-declaration
+ -Wimplicit-int
+ -Wmain
+ -Wmissing-braces
+ -Wmissing-format-attribute
+ -Wmultichar
+ -Wparentheses
+ -Wreturn-type
+ -Wsequence-point
+ -Wshadow
+ -Wsign-compare
+ -Wswitch
+ -Wtrigraphs
+ -Wunknown-pragmas
+ -Wunused
+ -Wunused-function
+ -Wunused-label
+ -Wunused-parameter
+ -Wunused-value 
+ -Wunused-variable
+ -Wwrite-strings
+ -Wnested-externs
+ -Wstrict-prototypes
+ -g
+ -Wredundant-decls
+ -Wmissing-prototypes
+ -Wmissing-declarations 
+ -Wextra
+ -Wattributes
+ -Wendif-labels
+ -Winit-self
+ -Wint-to-pointer-cast
+ -Winvalid-pch
+ -Wmissing-field-initializers
+ -Wnonnull
+ -Woverflow
+ -Wvla
+ -Wpointer-to-int-cast
+ -Wstrict-aliasing
+ -Wvariadic-macros
+ -Wvolatile-register-var
+ -Wpointer-sign
+ -Wmissing-include-dirs
+ -Wmissing-prototypes
+ -Wmissing-declarations
+ -Wformat=2
+ -march=i386
+ -m32
+ -malign-jumps=1
+ -malign-loops=1
+ -malign-functions=1
+ -freg-struct-return
+ -mno-mmx
+ -mno-sse
+ -mno-sse2
+ -mno-sse3
+ -mno-3dnow
+ -fno-dwarf2-cfi-asm
+ -fno-asynchronous-unwind-tables
+ -fno-unwind-tables
+ -fno-stack-protector
+ -Werror  
+ -fno-builtin  
+ -m32
+ -Wl,-melf_i386
+ -Wl,--build-id=none 
+ -nostdlib
+ -Wl,-N
+ -Wl,-S
+ -Wl,-N
+ -Wl,-Ttext,0x7C00  
+ -o boot_hybrid.image boot/i386/pc/boot_hybrid_image-boot.o   
 clang -DHAVE_CONFIG_H -I. -I..  -Wall -W  -DGRUB_MACHINE_PCBIOS=1 -DGRUB_MACHINE=I386_PC -m32 -msoft-float -Xclang -msoft-float -Xclang -no-implicit-float -nostdinc -isystem /usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include -I../include -I../include -DGRUB_FILE=\"boot/i386/pc/cdboot.S\" -I. -I. -I.. -I.. -I../include -I../include -I../grub-core/lib/libgcrypt-grub/src/    -D_FILE_OFFSET_BITS=64 -g -no-integrated-as -m32 -msoft-float -Xclang -msoft-float -Xclang -no-implicit-float -DGRUB_FILE=\"boot/i386/pc/cdboot.S\" -I. -I. -I.. -I.. -I../include -I../include -I../grub-core/lib/libgcrypt-grub/src/ -DASM_FILE=1     -MT boot/i386/pc/cdboot_image-cdboot.o -MD -MP -MF boot/i386/pc/.deps-core/cdboot_image-cdboot.Tpo -c -o boot/i386/pc/cdboot_image-cdboot.o `test -f 'boot/i386/pc/cdboot.S' || echo './'`boot/i386/pc/cdboot.S
 mv -f boot/i386/pc/.deps-core/cdboot_image-cdboot.Tpo boot/i386/pc/.deps-core/cdboot_image-cdboot.Po
 clang -Os -Wall -W -Wshadow -Wpointer-arith -Wundef -Wchar-subscripts -Wcomment -Wdeprecated-declarations -Wdisabled-optimization -Wdiv-by-zero -Wfloat-equal -Wformat-extra-args -Wformat-security -Wformat-y2k -Wimplicit -Wimplicit-function-declaration -Wimplicit-int -Wmain -Wmissing-braces -Wmissing-format-attribute -Wmultichar -Wparentheses -Wreturn-type -Wsequence-point -Wshadow -Wsign-compare -Wswitch -Wtrigraphs -Wunknown-pragmas -Wunused -Wunused-function -Wunused-label -Wunused-parameter -Wunused-value  -Wunused-variable -Wwrite-strings -Wnested-externs -Wstrict-prototypes -g -Wredundant-decls -Wmissing-prototypes -Wmissing-declarations  -Wextra -Wattributes -Wendif-labels -Winit-self -Wint-to-pointer-cast -Winvalid-pch -Wmissing-field-initializers -Wnonnull -Woverflow -Wvla -Wpointer-to-int-cast -Wstrict-aliasing -Wvariadic-macros -Wvolatile-register-var -Wpointer-sign -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-declarations -Wformat=2 -march=i386 -m32 -malign-jumps=1 -malign-loops=1 -malign-functions=1 -freg-struct-return -mno-mmx -mno-sse -mno-sse2 -mno-sse3 -mno-3dnow -fno-dwarf2-cfi-asm -fno-asynchronous-unwind-tables -fno-unwind-tables -fno-stack-protector -Werror   -fno-builtin   -m32 -Wl,-melf_i386 -Wl,--build-id=none  -nostdlib -Wl,-N -Wl,-S -Wl,-N -Wl,-Ttext,0x7C00   -o cdboot.image boot/i386/pc/cdboot_image-cdboot.o   
